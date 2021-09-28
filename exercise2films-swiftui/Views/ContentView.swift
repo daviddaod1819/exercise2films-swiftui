@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+            
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            LoginView()
+        }.modifier(NavigationBarModifier(backgroundColor: .clear, titleColor: UIColor.white))
     }
 }
 
@@ -19,3 +21,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
